@@ -11,12 +11,15 @@ html {
 
 .page {
   inline-size: 1200px;
+  display: flex;
   block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  place-content: center;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -42,9 +45,8 @@ ol {
   width: 1140px;
   display: grid;
   grid-template-columns: 710px 400px;
-  padding-top: 135px;
   gap: 31px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .result__video {
@@ -235,7 +237,7 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   width: 15px;
   height: 15px;
