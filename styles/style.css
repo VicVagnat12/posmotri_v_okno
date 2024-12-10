@@ -148,7 +148,8 @@ ol {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  text-underline-position: from-font;
+  text-decoration: none;
+  text-underline-position: auto;
   text-decoration-skip-ink: none;
   margin-bottom: 5px;
   white-space: nowrap;
@@ -197,7 +198,6 @@ ol {
   width: 100%;
   padding-left: 0;
   box-sizing: border-box;
-  border: none;
   min-width: 225px;
   border: none;
   border-block-start: 1px solid #fff;
@@ -259,7 +259,6 @@ ol {
 
 .search-form__textfield:active {
   outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -316,6 +315,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .content__card-link:focus {
